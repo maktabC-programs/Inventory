@@ -90,6 +90,7 @@ class Program
                 }
             }
         }
+        ////
 
         static void ReceiveGoods(ProductService service, ref string errorMessage)
         {
