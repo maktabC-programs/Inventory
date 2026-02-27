@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace CW10B.Model
 {
-    internal class StudentInfo
+    public class StudentInfo
     {
+        public string Name { get; set; }    
+        public StudentInfo(string name)
+        {
+            Name = name;
+        }
+
+        public  string PrintMyName()
+        {
+            return $"my name is {Name} "; 
+        }
+        public string PrintTodayInfo()
+        {
+            //TODO
+            return "";
+        }
     }
 }
