@@ -1,10 +1,17 @@
 using CW10B.Logger;
+using CW10B.Model;
 using CW10B.Repository;
 using CW10B.Service;
 class Program
 {
     static void Main()
     {
+
+        Console.WriteLine("name");
+        var name = Console.ReadLine();
+        var student = new StudentInfo(name);
+        Console.WriteLine(student.PrintMyName);
+
         var productService = new ProductService(new FileLogger(), new ProductRepository());
 
         string errorMessage = "";
